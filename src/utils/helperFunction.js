@@ -19,3 +19,38 @@ function MonthName(month) {
         case 12: return 'Dec'
     }
 }
+
+export function getPastCampaigns(apiData) {
+    let filteredCamp = []
+    const now = new Date();
+    now.setHours(0, 0, 0, 0);
+    apiData ?.forEach(camp => {
+        if (Date.parse(camp.date) < now) {
+            filteredCamp.push(camp)
+        } else null;
+    });
+    return filteredCamp;
+}
+
+export function getLiveCampaigns(apiData) {
+    let filteredCamp = []
+    const now = new Date();
+    apiData ?.forEach(camp => {
+        if (new Date(camp.date) ?.setHours(0, 0, 0, 0) === now.setHours(0, 0, 0, 0)) {
+            filteredCamp.push(camp)
+        } else null;
+    });
+    return filteredCamp;
+}
+
+export function getFutureCampaigns(apiData) {
+    let filteredCamp = []
+    const now = new Date();
+    now.setHours(0, 0, 0, 0);
+    apiData ?.forEach(camp => {
+        if (new Date(camp.date).setHours(0, 0, 0, 0) > now) {
+            filteredCamp.push(camp)
+        } else null;
+    });
+    return filteredCamp;
+}

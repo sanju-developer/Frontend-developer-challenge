@@ -24,7 +24,15 @@
     }
   },
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
     "camelcase": [
       "error",
       {
@@ -38,9 +46,12 @@
         "props": false
       }
     ],
-    "quotes": ["error", "single"],
-    "no-unused-vars": [
+    "quotes": [
       "error",
+      "single"
+    ],
+    "no-unused-vars": [
+      "warn",
       {
         "args": "all",
         "argsIgnorePattern": "^_"
@@ -50,7 +61,10 @@
     "no-console": [
       "warn",
       {
-        "allow": ["warn", "error"]
+        "allow": [
+          "warn",
+          "error"
+        ]
       }
     ],
     "no-var": "warn",
@@ -59,7 +73,12 @@
     "react/sort-comp": [
       1,
       {
-        "order": ["constructor", "lifecycle", "everything-else", "render"]
+        "order": [
+          "constructor",
+          "lifecycle",
+          "everything-else",
+          "render"
+        ]
       }
     ],
     "react/jsx-props-no-spreading": "off",
@@ -113,13 +132,27 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
   },
-  "plugins": ["prettier", "react", "react-hooks", "babel"],
-  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": [
+    "prettier",
+    "react",
+    "react-hooks",
+    "babel"
+  ],
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
   "settings": {
     "import/resolver": {
       "node": {
-        "paths": ["app"],
-        "extensions": [".js", ".jsx"]
+        "paths": [
+          "app"
+        ],
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
       }
     }
   }

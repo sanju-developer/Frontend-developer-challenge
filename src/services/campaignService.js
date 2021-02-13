@@ -24,7 +24,7 @@ export const getCampaignsDataService = () => {
                 },
                 {
                     'id': 'bs2',
-                    'date': '2021-07-08T04:00:00.000Z',
+                    'date': '2019-07-08T04:00:00.000Z',
                     'name': 'Auto Chess',
                     'region': 'CA, FR',
                     'createdOn': 1559806715124,
@@ -35,7 +35,7 @@ export const getCampaignsDataService = () => {
                 },
                 {
                     'id': 'bs3',
-                    'date': '2021-08-28T04:00:00.000Z',
+                    'date': '2021-02-13T18:42:26.771Z',
                     'name': 'Garena Free Fire',
                     'region': 'FR',
                     'createdOn': 1559806711124,
@@ -57,7 +57,7 @@ export const getCampaignsDataService = () => {
                 },
                 {
                     'id': 'bs5',
-                    'date': '2021-07-20T04:00:00.000Z',
+                    'date': '2019-07-20T04:00:00.000Z',
                     'name': 'Need for Speed™ No Limits',
                     'region': 'JP',
                     'createdOn': 1559806680124,
