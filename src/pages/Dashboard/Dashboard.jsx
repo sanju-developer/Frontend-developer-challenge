@@ -72,7 +72,6 @@ function Dashboard() {
     const copyOfSourceOfTruth = [...sourceOfTruth]
     const index = copyOfSourceOfTruth.findIndex(finalData => finalData.id === id)
     copyOfSourceOfTruth[index].date = event.toISOString()
-    console.log(copyOfSourceOfTruth, 'after------>>>>>>', id)
     setSourceOfTruth(copyOfSourceOfTruth)
     updateTableData()
   }
