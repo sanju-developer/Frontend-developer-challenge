@@ -1,0 +1,18 @@
+.dashboard-sub-container {
+  padding: 40px 182px;
+  .headline {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 50px;
+  }
+  h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-sub-container {
+      padding: 40px 20px;
+  }
+}
