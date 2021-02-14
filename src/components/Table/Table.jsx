@@ -23,6 +23,7 @@ function Table(props) {
     setTodayDate(formattedDateForFindingDiff(todayDate))
   }, [])
 
+  // convert ISO format date into yyyy,mm,dd
   const formattedDateForFindingDiff = date => {
     const newdate = new Date(date)
     return (newdate.getFullYear() + ',' + parseInt(newdate.getMonth() + 1) + ',' + newdate.getDate())
