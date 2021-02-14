@@ -9,6 +9,7 @@ import Tabs from '../../components/Tabs/Tabs'
 import Table from '../../components/Table/Table'
 import { CampaignAction } from '../../redux/actions/campaignAction'
 import { getPastCampaigns, getLiveCampaigns, getFutureCampaigns } from '../../utils/helperFunction'
+import { FormattedMessage } from 'react-intl'
 
 function Dashboard() {
   const dispatch = useDispatch()
@@ -80,7 +81,7 @@ function Dashboard() {
     <div className="dashboard-container">
       <Header />
       <div className="dashboard-sub-container">
-        <h1 className="dark-blue-color headline">Manage Campaigns</h1>
+        <h1 className="dark-blue-color headline"><FormattedMessage id="headline" defaultMessage="Manage Campaigns" /></h1>
         <Tabs
           tabsConstantState={tabsConstantState}
           tabClickHandler={tabClickHandler}

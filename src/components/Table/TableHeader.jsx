@@ -1,4 +1,6 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
+
 import { tableHeaderConstant } from '../../utils/constants'
 
 function TableHeader() {
@@ -16,7 +18,7 @@ function TableHeader() {
                             }`}
                         key={th.key}
                     >
-                        {th.text}
+                        <FormattedMessage id={th.lngId} defaultMessage={th.text} />
                     </th>
                 ))}
             </tr>

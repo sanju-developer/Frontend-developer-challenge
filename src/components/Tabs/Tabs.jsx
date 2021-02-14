@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './Tabs.scss'
+import { FormattedMessage } from 'react-intl'
 
 function Tabs(props) {
   const { tabClickHandler, tabsConstantState } = props
@@ -15,7 +16,7 @@ function Tabs(props) {
             key={tab.key}
             onClick={() => tabClickHandler(index)}
           >
-            {tab.text}
+            <FormattedMessage id={tab.lngId} defaultMessage={tab.text} />
           </span>
         ))}
       </div>

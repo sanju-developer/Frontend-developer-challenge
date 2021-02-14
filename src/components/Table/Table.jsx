@@ -11,6 +11,7 @@ import reportIcon from '../../assets/statistics-report.png'
 import { getFormattedDate, getDateDifference } from '../../utils/helperFunction'
 import TableHeader from './TableHeader'
 import ViewPrice from '../Modal/ViewPrice/ViewPrice';
+import { FormattedMessage } from 'react-intl';
 
 function Table(props) {
   const { showData, value, onChange, whichIsActiveTab } = props
@@ -39,7 +40,15 @@ function Table(props) {
         <tbody>
           {showData ?.length !== 0 ? showData ?.map((disp) =>
             <tr key={disp.id}>
-              <td className='w-15 date-columns'>{getFormattedDate(disp.date)} <div>{whichIsActiveTab === 0 ? getDateDifference(formattedDateForFindingDiff(disp.date), todayDate) + ' Days Ahead' : whichIsActiveTab === 1 ? 'Live' : getDateDifference(formattedDateForFindingDiff(disp.date), todayDate) + ' Days Ago'}</div></td>
+              <td className='w-15 date-columns'>{getFormattedDate(disp.date)} <div>
+                {whichIsActiveTab === 0 ?
+                  <> {getDateDifference(formattedDateForFindingDiff(disp.date), todayDate)} <FormattedMessage id="time.daysAhead" defaultMessage="Days Ahead" /> </>
+                  :
+                  whichIsActiveTab === 1 ? <FormattedMessage id="time.live" defaultMessage="Live" />
+                    :
+                    whichIsActiveTab === 2 ? <> {getDateDifference(formattedDateForFindingDiff(disp.date), todayDate)} <FormattedMessage id="time.daysAgo" defaultMessage="Days Ago" /> </>
+                      : ''}
+              </div></td>
               <td className='w-30'>
                 <div className="logo-text">
                   <img
@@ -53,18 +62,18 @@ function Table(props) {
                   </div>
                 </div>
               </td>
-              <td className='view-column w-15' ><img className="dollar-icon" src={dollarIcon} /> <a onClick={() => viewPriceHandler(disp)}>View Pricing</a></td>
+              <td className='view-column w-15' ><img className="dollar-icon" src={dollarIcon} /> <a onClick={() => viewPriceHandler(disp)}><FormattedMessage id="title.viewPricing" defaultMessage="View Pricing" /></a></td>
               <td className='action-column w-40'>
                 <div className="actions-container">
-                  <span><img className="file-icon" src={fileIcon} /> <span>CSV</span></span>
-                  <span><img className="report-icon" src={reportIcon} /> <span>Report</span></span>
+                  <span><img className="file-icon" src={fileIcon} /> <span><FormattedMessage id="title.csv" defaultMessage="CSV" /></span></span>
+                  <span><img className="report-icon" src={reportIcon} /> <span><FormattedMessage id="title.report" defaultMessage="Report" /></span></span>
                   <span>
                     <DateTimePicker
                       onChange={(data) => onChange(data, disp.id)}
                       value={value}
                       format="MM DD YYY"
                       calendarIcon={<img className="calendar-icon" src={calendarIcon} />}
-                    /> <span>Schedule Again</span></span>
+                    /> <span><FormattedMessage id="title.scheduleAgain" defaultMessage="Schedule Again" /></span></span>
                 </div>
               </td>
             </tr>
