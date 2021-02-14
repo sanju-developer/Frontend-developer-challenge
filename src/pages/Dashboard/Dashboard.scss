@@ -12,6 +12,11 @@
     margin-bottom: 40px;
   }
 }
+.loader{
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
 }
 
 @media screen and (max-width: 768px) {

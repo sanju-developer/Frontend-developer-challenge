@@ -1,5 +1,7 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { FormattedMessage } from 'react-intl'
+import { Spinner } from 'react-bootstrap'
 
 import './Dashboard.scss'
 
@@ -9,7 +11,6 @@ import Tabs from '../../components/Tabs/Tabs'
 import Table from '../../components/Table/Table'
 import { CampaignAction } from '../../redux/actions/campaignAction'
 import { getPastCampaigns, getLiveCampaigns, getFutureCampaigns } from '../../utils/helperFunction'
-import { FormattedMessage } from 'react-intl'
 
 function Dashboard() {
   const dispatch = useDispatch()
@@ -86,7 +87,9 @@ function Dashboard() {
           tabsConstantState={tabsConstantState}
           tabClickHandler={tabClickHandler}
         />
-        {isApiLoading ? null : <Table showData={tableData} value={selectedDate} onChange={dateHandler} whichIsActiveTab={whichIsActiveTab} />}
+        {isApiLoading ? <div className="loader"><Spinner animation="border" role="status" variant="secondary">
+          <span className="sr-only">Loading...</span>
+        </Spinner> </div> : <Table showData={tableData} value={selectedDate} onChange={dateHandler} whichIsActiveTab={whichIsActiveTab} />}
       </div>
     </div>
   )
