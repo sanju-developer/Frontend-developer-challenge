@@ -1,5 +1,7 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { FormattedMessage } from 'react-intl'
+import { Spinner } from 'react-bootstrap'
 
 import './Dashboard.scss'
 
@@ -80,12 +82,14 @@ function Dashboard() {
     <div className="dashboard-container">
       <Header />
       <div className="dashboard-sub-container">
-        <h1 className="dark-blue-color headline">Manage Campaigns</h1>
+        <h1 className="dark-blue-color headline"><FormattedMessage id="headline" defaultMessage="Manage Campaigns" /></h1>
         <Tabs
           tabsConstantState={tabsConstantState}
           tabClickHandler={tabClickHandler}
         />
-        {isApiLoading ? null : <Table showData={tableData} value={selectedDate} onChange={dateHandler} />}
+        {isApiLoading ? <div className="loader"><Spinner animation="border" role="status" variant="secondary">
+          <span className="sr-only">Loading...</span>
+        </Spinner> </div> : <Table showData={tableData} value={selectedDate} onChange={dateHandler} whichIsActiveTab={whichIsActiveTab} />}
       </div>
     </div>
   )

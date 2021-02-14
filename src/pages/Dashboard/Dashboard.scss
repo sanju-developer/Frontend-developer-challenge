@@ -2,6 +2,11 @@
 // display: grid;
 .dashboard-sub-container {
   padding: 40px 182px;
+  .list{
+    span{
+    cursor: pointer;
+    }
+  }
   .headline {
     font-weight: bold;
     font-size: 48px;
@@ -11,6 +16,11 @@
     font-size: 48px;
     margin-bottom: 40px;
   }
+}
+.loader{
+  display: flex;
+  justify-content: center;
+  padding: 24px;
 }
 }
 

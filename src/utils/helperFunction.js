@@ -1,6 +1,6 @@
 export function getFormattedDate(string) {
     const date = new Date(string)
-    return (MonthName(date.getMonth()) + ' ' + date.getFullYear() + ', ' + date.getDate());
+    return (MonthName(parseInt(date.getMonth() + 1)) + ' ' + date.getFullYear() + ', ' + date.getDate());
 }
 
 function MonthName(month) {
@@ -53,4 +53,13 @@ export function getFutureCampaigns(apiData) {
         } else null;
     });
     return filteredCamp;
+}
+
+export function getDateDifference(compaignDate, firstDateInFormat) {
+    const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+    const firstDate = new Date(firstDateInFormat)
+    const secondDate = new Date(compaignDate);
+
+    const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
+    return diffDays
 }

@@ -4,6 +4,8 @@
   background: #1f2640;
   .logo-container {
     padding: 17px 182px 18px;
+    display: flex;
+    justify-content: space-between;
     .logo-text {
       display: flex;
       .logo {
