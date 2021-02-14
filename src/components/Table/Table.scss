@@ -17,6 +17,12 @@
     tbody > tr{
       border-bottom: 1px solid #ECECEC;
     }
+    .date-columns{
+      div{
+        font-size: 14px;
+        color: #7788A3;
+      }
+    }
     th{
       text-align: left;
       padding: 12px 20px;
@@ -74,7 +80,7 @@
       width: 24px;
       height: 24px;
     }
-    span{
+    a{
       font-size: 14px;
       vertical-align: top;
       cursor: pointer;

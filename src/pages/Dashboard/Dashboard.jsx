@@ -85,7 +85,7 @@ function Dashboard() {
           tabsConstantState={tabsConstantState}
           tabClickHandler={tabClickHandler}
         />
-        {isApiLoading ? null : <Table showData={tableData} value={selectedDate} onChange={dateHandler} />}
+        {isApiLoading ? null : <Table showData={tableData} value={selectedDate} onChange={dateHandler} whichIsActiveTab={whichIsActiveTab} />}
       </div>
     </div>
   )
