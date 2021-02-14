@@ -14,9 +14,9 @@ function App() {
 
   const lng = useSelector((state) => state.lang.data)
 
-  return <ErrorBoundary
-  ><Suspense fallback={<p>loading</p>}>
-      <IntlProvider
+  return <ErrorBoundary>
+    <Suspense fallback={<p>loading</p>}>
+      <IntlProvider // Language transaltion
         locale={lng}
         messages={messages[lng]}
         key={lng}

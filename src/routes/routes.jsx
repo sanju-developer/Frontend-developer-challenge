@@ -6,6 +6,7 @@ import PageNotFound from '../components/PageNotFound/PageNotFound'
 
 function Routing() {
   return (
+    // Handling of navigation
     <Router>
       <Switch>
         <Route exact path="/">

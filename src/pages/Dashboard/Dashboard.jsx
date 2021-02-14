@@ -24,25 +24,30 @@ function Dashboard() {
   const [sourceOfTruth, setSourceOfTruth] = useState([])
 
   useEffect(() => {
+    // fake api call for getting list of campaigns
     dispatch(CampaignAction())
     setIsMounted(true)
   }, [])
 
   useEffect(() => {
     if (apiData ?.data && tableData.length === 0) {
+      // make copy of api data (master data)
       setSourceOfTruth(apiData ?.data)
+      // set table data
       setTableData(apiData ?.data)
     }
   }, [apiData ?.data])
 
   useEffect(() => {
     if (tableData.length !== 0 && isMounted) {
+      // update table data as per view (present, past and future campaigns)
       updateTableData()
       setIsMounted(false)
     }
   }, [tableData, isMounted])
 
   useEffect(() => {
+    // update table data on behalf of which tab (Upcoming, Live, Past) is selected by user
     updateTableData()
   }, [whichIsActiveTab])
 
@@ -60,6 +65,7 @@ function Dashboard() {
 
   const tabClickHandler = (index) => {
     setWhichIsActiveTab(index)
+    // key active class on selecte tab in order to show it as active Tab
     setTabsConstantState(
       tabsConstantState.map((item, ind) =>
         index === ind
@@ -70,11 +76,13 @@ function Dashboard() {
   }
 
   const dateHandler = (event, id) => {
+    // update date in master data on re-scheduling
     setDateHandler(event)
     const copyOfSourceOfTruth = [...sourceOfTruth]
     const index = copyOfSourceOfTruth.findIndex(finalData => finalData.id === id)
     copyOfSourceOfTruth[index].date = event.toISOString()
     setSourceOfTruth(copyOfSourceOfTruth)
+    // once master data updated, then updae the view user is looking for
     updateTableData()
   }
 
