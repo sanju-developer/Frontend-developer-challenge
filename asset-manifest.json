@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Frontend-developer-challenge/static/css/main.a6e436ed.chunk.css",
-    "main.js": "/Frontend-developer-challenge/static/js/main.05d65597.chunk.js",
-    "main.js.map": "/Frontend-developer-challenge/static/js/main.05d65597.chunk.js.map",
-    "runtime-main.js": "/Frontend-developer-challenge/static/js/runtime-main.489eb9ba.js",
-    "runtime-main.js.map": "/Frontend-developer-challenge/static/js/runtime-main.489eb9ba.js.map",
-    "static/css/2.3a30ecb3.chunk.css": "/Frontend-developer-challenge/static/css/2.3a30ecb3.chunk.css",
-    "static/js/2.b5252711.chunk.js": "/Frontend-developer-challenge/static/js/2.b5252711.chunk.js",
-    "static/js/2.b5252711.chunk.js.map": "/Frontend-developer-challenge/static/js/2.b5252711.chunk.js.map",
-    "static/js/3.1c8f00e7.chunk.js": "/Frontend-developer-challenge/static/js/3.1c8f00e7.chunk.js",
-    "static/js/3.1c8f00e7.chunk.js.map": "/Frontend-developer-challenge/static/js/3.1c8f00e7.chunk.js.map",
+    "main.css": "/Frontend-developer-challenge/static/css/main.a9fe1599.chunk.css",
+    "main.js": "/Frontend-developer-challenge/static/js/main.fa3a4dcc.chunk.js",
+    "main.js.map": "/Frontend-developer-challenge/static/js/main.fa3a4dcc.chunk.js.map",
+    "runtime-main.js": "/Frontend-developer-challenge/static/js/runtime-main.360fde36.js",
+    "runtime-main.js.map": "/Frontend-developer-challenge/static/js/runtime-main.360fde36.js.map",
+    "static/css/2.6a08b4d0.chunk.css": "/Frontend-developer-challenge/static/css/2.6a08b4d0.chunk.css",
+    "static/js/2.af2feeae.chunk.js": "/Frontend-developer-challenge/static/js/2.af2feeae.chunk.js",
+    "static/js/2.af2feeae.chunk.js.map": "/Frontend-developer-challenge/static/js/2.af2feeae.chunk.js.map",
+    "static/js/3.f25a9c55.chunk.js": "/Frontend-developer-challenge/static/js/3.f25a9c55.chunk.js",
+    "static/js/3.f25a9c55.chunk.js.map": "/Frontend-developer-challenge/static/js/3.f25a9c55.chunk.js.map",
     "index.html": "/Frontend-developer-challenge/index.html",
-    "static/css/2.3a30ecb3.chunk.css.map": "/Frontend-developer-challenge/static/css/2.3a30ecb3.chunk.css.map",
-    "static/css/main.a6e436ed.chunk.css.map": "/Frontend-developer-challenge/static/css/main.a6e436ed.chunk.css.map",
-    "static/js/2.b5252711.chunk.js.LICENSE.txt": "/Frontend-developer-challenge/static/js/2.b5252711.chunk.js.LICENSE.txt",
+    "static/css/2.6a08b4d0.chunk.css.map": "/Frontend-developer-challenge/static/css/2.6a08b4d0.chunk.css.map",
+    "static/css/main.a9fe1599.chunk.css.map": "/Frontend-developer-challenge/static/css/main.a9fe1599.chunk.css.map",
+    "static/js/2.af2feeae.chunk.js.LICENSE.txt": "/Frontend-developer-challenge/static/js/2.af2feeae.chunk.js.LICENSE.txt",
     "static/media/Bitmap.3ef629fb.png": "/Frontend-developer-challenge/static/media/Bitmap.3ef629fb.png",
     "static/media/Bitmap2.bc5dc000.png": "/Frontend-developer-challenge/static/media/Bitmap2.bc5dc000.png",
     "static/media/Bitmap3.64d2d22b.png": "/Frontend-developer-challenge/static/media/Bitmap3.64d2d22b.png",
@@ -23,10 +23,10 @@
     "static/media/Bitmap8.70e33e05.png": "/Frontend-developer-challenge/static/media/Bitmap8.70e33e05.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.489eb9ba.js",
-    "static/css/2.3a30ecb3.chunk.css",
-    "static/js/2.b5252711.chunk.js",
-    "static/css/main.a6e436ed.chunk.css",
-    "static/js/main.05d65597.chunk.js"
+    "static/js/runtime-main.360fde36.js",
+    "static/css/2.6a08b4d0.chunk.css",
+    "static/js/2.af2feeae.chunk.js",
+    "static/css/main.a9fe1599.chunk.css",
+    "static/js/main.fa3a4dcc.chunk.js"
   ]
 }
