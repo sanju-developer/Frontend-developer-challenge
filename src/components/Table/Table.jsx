@@ -65,7 +65,7 @@ function Table(props) {
               <td className='view-column w-15' ><img className="dollar-icon" src={dollarIcon} /> <a onClick={() => viewPriceHandler(disp)}><FormattedMessage id="title.viewPricing" defaultMessage="View Pricing" /></a></td>
               <td className='action-column w-40'>
                 <div className="actions-container">
-                  <span><img className="file-icon" src={fileIcon} /> <span><FormattedMessage id="title.csv" defaultMessage="CSV" /></span></span>
+                  <span onClick={() => window.open(disp.csv, '_blank')}><img className="file-icon" src={fileIcon} /> <span ><FormattedMessage id="title.csv" defaultMessage="CSV" /></span></span>
                   <span><img className="report-icon" src={reportIcon} /> <span><FormattedMessage id="title.report" defaultMessage="Report" /></span></span>
                   <span>
                     <DateTimePicker
