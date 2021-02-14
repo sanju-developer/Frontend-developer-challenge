@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Frontend-developer-challenge/static/css/main.7c11eb0c.chunk.css",
+    "main.css": "/Frontend-developer-challenge/static/css/main.a6e436ed.chunk.css",
     "main.js": "/Frontend-developer-challenge/static/js/main.05d65597.chunk.js",
     "main.js.map": "/Frontend-developer-challenge/static/js/main.05d65597.chunk.js.map",
     "runtime-main.js": "/Frontend-developer-challenge/static/js/runtime-main.489eb9ba.js",
@@ -12,7 +12,7 @@
     "static/js/3.1c8f00e7.chunk.js.map": "/Frontend-developer-challenge/static/js/3.1c8f00e7.chunk.js.map",
     "index.html": "/Frontend-developer-challenge/index.html",
     "static/css/2.3a30ecb3.chunk.css.map": "/Frontend-developer-challenge/static/css/2.3a30ecb3.chunk.css.map",
-    "static/css/main.7c11eb0c.chunk.css.map": "/Frontend-developer-challenge/static/css/main.7c11eb0c.chunk.css.map",
+    "static/css/main.a6e436ed.chunk.css.map": "/Frontend-developer-challenge/static/css/main.a6e436ed.chunk.css.map",
     "static/js/2.b5252711.chunk.js.LICENSE.txt": "/Frontend-developer-challenge/static/js/2.b5252711.chunk.js.LICENSE.txt",
     "static/media/Bitmap.3ef629fb.png": "/Frontend-developer-challenge/static/media/Bitmap.3ef629fb.png",
     "static/media/Bitmap2.bc5dc000.png": "/Frontend-developer-challenge/static/media/Bitmap2.bc5dc000.png",
@@ -26,7 +26,7 @@
     "static/js/runtime-main.489eb9ba.js",
     "static/css/2.3a30ecb3.chunk.css",
     "static/js/2.b5252711.chunk.js",
-    "static/css/main.7c11eb0c.chunk.css",
+    "static/css/main.a6e436ed.chunk.css",
     "static/js/main.05d65597.chunk.js"
   ]
 }
