@@ -24,6 +24,11 @@
 
 @media screen and (max-width: 768px) {
   .list {
-    flex-direction: column;
+    flex-direction: row;
+
+    span{
+      text-align: center;
+      padding: 0 10px;
+    }
   }
 }
