@@ -46,7 +46,7 @@ function Table(props) {
                       value={value}
                       format="MM DD YYY"
                       calendarIcon={<img className="calendar-icon" src={calendarIcon} />}
-                    /> <span>Calender Icon</span></span>
+                    /> <span>Schedule Again</span></span>
                 </div>
               </td>
             </tr>
